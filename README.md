@@ -46,7 +46,10 @@ The complete development was achieved using the Python3 technology and it is rec
 The project is deployed on both Streamlit cloud and Heroku.
 - [Streamlit](https://share.streamlit.io/anshulp2912/scrivener/main/source/scrivener_user_interface.py)
 - [Heroku](https://scrivener-heroku.herokuapp.com/)
-
+## How to get MonkeyLearn API key
+1. Go to [https://monkeylearn.com/sentiment-analysis-online/](https://monkeylearn.com/sentiment-analysis-online/)
+2. Enter your requirements and sign up. You can use one of the pretrained model like we did or you can create your own model as well!
+ 
 ## Steps for Execution <a name="ExecutionSteps"></a>
 1. Clone the Git repository.
 2. Run `pip install -r requirements.txt`
