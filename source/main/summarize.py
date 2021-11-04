@@ -45,17 +45,20 @@ class Summary:
 
         # initializing empty list
         summary_text = []
-        # initialize a text parser taking in transcribed text, and setting language to english
+        # initialize a text parser taking in transcribed text, and setting
+        # language to english
         parser = PlaintextParser.from_string(
             self.transcribed_text, Tokenizer("english")
         )
         # initialize the summarizer object - you can use different summarization algorithms here
         # such has LexRank and Luhn
         summarizer = LsaSummarizer()
-        # create a summary passing in the transcribed text and setting the number of sentences
+        # create a summary passing in the transcribed text and setting the
+        # number of sentences
         summary = summarizer(parser.document, 10)
 
-        # loop through sentences turning them into strings and appending them to summary_text
+        # loop through sentences turning them into strings and appending them
+        # to summary_text
         for sentences in summary:
             summary_text.append(str(sentences))
 

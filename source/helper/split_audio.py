@@ -9,6 +9,7 @@ This code is licensed under MIT license (see LICENSE.MD for details)
 from pydub import AudioSegment
 import math
 
+
 class splitwavaudio():
     """
     A class used to split audio into segment for text extraction
@@ -23,8 +24,8 @@ class splitwavaudio():
     filepath: str
         filepath of downloaded video
     audio: AudioSegment object
-        
-        
+
+
     Methods
     -------
     get_duration:
@@ -34,6 +35,7 @@ class splitwavaudio():
     multiple_split(min_per_split):
         Create splits of audio files
     """
+
     def __init__(self, folder, filename):
         """
         Parameters
@@ -46,18 +48,18 @@ class splitwavaudio():
         self.folder = folder
         self.filename = filename
         self.filepath = folder + '/' + filename
-        self.audio = AudioSegment.from_wav(self.filepath)	
-	
+        self.audio = AudioSegment.from_wav(self.filepath)
+
     def get_duration(self):
-        """ 
+        """
         Returns time of audio
         """
         return self.audio.duration_seconds
-    
+
     def single_split(self, from_min, to_min, split_filename):
-        """ 
+        """
         Create files for every split
-        
+
         Parameters
         ----------
         from_min : float
@@ -73,11 +75,11 @@ class splitwavaudio():
         split_audio = self.audio[t1:t2]
         # export each split to audio file
         split_audio.export(self.folder + '/' + split_filename, format="wav")
-        
+
     def multiple_split(self, min_per_split):
-        """ 
+        """
         Create splits of audio files
-        
+
         Parameters
         ----------
         min_per_split : float
@@ -88,6 +90,5 @@ class splitwavaudio():
         # Call single_split to create multiple wav files
         for i in range(0, total_mins, min_per_split):
             split_fn = str(i) + '_' + self.filename
-            self.single_split(i, i+min_per_split, split_fn)
+            self.single_split(i, i + min_per_split, split_fn)
         return int(num_of_splits)
-                

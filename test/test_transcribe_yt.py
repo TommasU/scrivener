@@ -19,6 +19,7 @@ video_one_url = "https://www.youtube.com/watch?v=JvBHwVpBCwM"
 # contains no transcripts
 video_two_url = "https://www.youtube.com/watch?v=qBTdukbzc78"
 
+
 @pytest.mark.parametrize('youtube_url, test_index', [
     (video_one_url, 1),
     (video_two_url, 2)
@@ -36,7 +37,8 @@ def test_check_yt_cc(youtube_url, test_index):
         parsed = urlparse(youtube_url)
         assert transcript.video_id == parse_qs(parsed.query)["v"][0]
     elif test_index == 2:
-        assert transcript == None
+        assert transcript is None
+
 
 def fetch_transcript(yt_id):
     full_text = YouTubeTranscriptApi.get_transcript(yt_id)
@@ -44,9 +46,10 @@ def fetch_transcript(yt_id):
     for rec in full_text:
         transcript_text += " " + rec["text"]
     punctuated_transcription = Punctuation.add_punctuation_transcript(
-            transcript_text
+        transcript_text
     )
     return punctuated_transcription
+
 
 @pytest.mark.parametrize('youtube_url, test_index', [
     (video_one_url, 1),
@@ -68,8 +71,8 @@ def test_transcribe_yt_video_w_cc(youtube_url, test_index):
         full_text_tokens = nltk.tokenize.word_tokenize(full_text)
         summary_tokens = nltk.tokenize.word_tokenize(transc_obj.summary)
         score = nltk.translate.bleu_score.sentence_bleu(
-            [full_text_tokens], 
-            summary_tokens, 
+            [full_text_tokens],
+            summary_tokens,
             weights=(1,)
         )
         # print(f"BLEU score for {youtube_url} is {score}", flush=True)
@@ -79,6 +82,7 @@ def test_transcribe_yt_video_w_cc(youtube_url, test_index):
             transc_obj.transcribe_yt_video_w_cc()
         except Exception as e:
             assert isinstance(e, TranscriptsDisabled)
+
 
 @pytest.mark.parametrize('youtube_url, test_index', [
     (video_one_url, 1),

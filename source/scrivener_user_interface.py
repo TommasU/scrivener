@@ -70,11 +70,10 @@ if not os.path.exists("source/punct_model_full.pcl"):
     third_file = os.path.abspath("source/punct_model_part3.pcl")
     new_file = os.path.abspath("source/punct_model_full.pcl")
 
-
-
     # Path to model files parts that needs to be combined
     # Storing these models in github causes an issue with the Heroku deployment and exceeds 500 MB (it is 618 MB)
-    # slug/payload limit. Therefore, using this alternative to get it from Github during runtime.
+    # slug/payload limit. Therefore, using this alternative to get it from
+    # Github during runtime.
     if not os.path.exists('source/punct_model_part1.pcl'):
         print("Downloading punct_model_part1.pcl file for ML model...")
         url1 = 'https://github.com/SN-18/scrivener/raw/developer/source/punct_model_part1.pcl'
@@ -93,14 +92,12 @@ if not os.path.exists("source/punct_model_full.pcl"):
         filename = wget.download(url3, out='source/punct_model_part3.pcl')
         print("\nDownloaded file: " + filename)
 
-
     first_file = os.path.abspath('source/punct_model_part1.pcl')
     second_file = os.path.abspath('source/punct_model_part2.pcl')
     third_file = os.path.abspath('source/punct_model_part3.pcl')
 
     # Path to combined model file
     new_file = os.path.abspath('source/punct_model_full.pcl')
-
 
     # Read content of model file parts and write it to the combined model file
     with open(new_file, "wb") as wfd:
@@ -120,14 +117,16 @@ def save_file(file):
 st.image("media/logo/logo.gif")
 
 # Display Radio options
-input_format = st.radio("Choose your input format", ["Youtube Link", "Upload a Video"])
+input_format = st.radio(
+    "Choose your input format", [
+        "Youtube Link", "Upload a Video"])
 
 # If user provides a Youtube Link
 if input_format == "Youtube Link":
     # Text input box
     youtube_link = st.text_input("Enter Youtube Link")
     # Check if its a valid youtube link
-    if re.findall("(www\.youtube\.com\/watch\?v=)", youtube_link):
+    if re.findall(r"(www\.youtube\.com\/watch\?v=)", youtube_link):
         st.video(youtube_link)
         # Make a progress bar
         progress_bar = st.progress(0)
@@ -139,8 +138,7 @@ if input_format == "Youtube Link":
                 "Shakespeare is completing the assignment",
                 "Do not worry, Mark Twain is on it",
                 "Robert Frost is taking the right road to summarize your video",
-            ]
-        )
+            ])
         progress_bar.progress(10)
 
         # Wait till we run the summarization
@@ -159,7 +157,8 @@ if input_format == "Youtube Link":
         st.write(summary)
 
         data = " ".join(summary.splitlines()[-10:])
-        st.header("Sentiment Analysis")  # sentiment analysis using monkey learn API
+        # sentiment analysis using monkey learn API
+        st.header("Sentiment Analysis")
         ml = MonkeyLearn("4f627e517819c240ab01baa82f6976153f0817d1")
         model_id = "cl_pi3C7JiL"
         result = ml.classifiers.classify(model_id, [data])
@@ -169,7 +168,6 @@ if input_format == "Youtube Link":
                 if tag_name is not None:
                     st.write(tag_name)
 
-
     # If user inputs an invalid Youtube link
     elif youtube_link != "":
         st.error("Please enter a valid Youtube Link!")
@@ -177,7 +175,10 @@ if input_format == "Youtube Link":
 # If user uploads a local video
 elif input_format == "Upload a Video":
     # Browse button for uploading .mp4 files
-    file = st.file_uploader("Upload a video", type=["mp4"], accept_multiple_files=False)
+    file = st.file_uploader(
+        "Upload a video",
+        type=["mp4"],
+        accept_multiple_files=False)
     if file is not None:
         st.video(file)
         # Make a progress bar
@@ -191,8 +192,7 @@ elif input_format == "Upload a Video":
                 "Shakespeare is completing the assignment",
                 "Do not worry, Mark Twain is on it",
                 "Robert Frost is taking the right road to summarize your video",
-            ]
-        )
+            ])
         # Wait till we run the summarization
         with st.spinner(progress_lines + " . . ."):
             progress_bar.progress(25)
@@ -212,7 +212,8 @@ elif input_format == "Upload a Video":
         st.header("Summary")
         st.write(summary)
         data = " ".join(summary.splitlines()[-10:])
-        st.header("Sentiment Analysis")  # sentiment analysis using monkey learn API
+        # sentiment analysis using monkey learn API
+        st.header("Sentiment Analysis")
         ml = MonkeyLearn("4f627e517819c240ab01baa82f6976153f0817d1")
         model_id = "cl_pi3C7JiL"
         result = ml.classifiers.classify(model_id, data)
