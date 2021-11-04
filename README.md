@@ -13,7 +13,6 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/TommasU/scrivener)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/TommasU/scrivener)](https://github.com/TommasU/scrivener/issues/pull/)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/TommasU/scrivener/Developer/badges)
-[![GitHub commits](https://badgen.net/github/last-commit/TommasU/scrivener)](https://github.com/TommasU/scrivener/)
 ![GitHub pull-requests-closed](https://img.shields.io/github/issues-pr-closed-raw/TommasU/scrivener)
 [![language_count](https://img.shields.io/github/languages/count/TommasU/scrivener)](https://GitHub.com/TommasU/scrivener/) 
 [![Repo-size](https://img.shields.io/github/repo-size/TommasU/scrivener)](https://GitHub.com/TommasU/scrivener/)
