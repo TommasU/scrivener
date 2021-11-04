@@ -6,20 +6,20 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
 [![GitHub issues](https://img.shields.io/github/issues/TommasU/scrivener)](https://github.com/TommasU/scrivener/issues)
-[![GitHub-closed-issues](https://img.shields.io/github/issues-closed-raw/TommasU/scrivener)](https://GitHub.com/TommasU/scrivener/)
-![pylint](https://img.shields.io/badge/-pylint-orange)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5601143.svg)](https://doi.org/10.5281/zenodo.5601143)
+[![GitHub-closed-issues](https://img.shields.io/github/issues-closed-raw/TommasU/scrivener)](https://github.com/TommasU/scrivener/issues?q=is%3Aissue+is%3Aclosed)
+[![pylint](https://img.shields.io/badge/-pylint-orange)](https://github.com/TommasU/scrivener/blob/main/.github/workflows/pylint.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5601143.svg)](https://doi.org/10.5281/zenodo.5643158)
 [![GitHub license](https://img.shields.io/github/license/TommasU/scrivener)](https://github.com/TommasU/scrivener/blob/main/LICENSE)
 ![Lines of code](https://img.shields.io/tokei/lines/github/TommasU/scrivener)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/TommasU/scrivener)](https://github.com/TommasU/scrivener/issues/pull/)
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/TommasU/scrivener/Developer/badges)
-![GitHub pull-requests-closed](https://img.shields.io/github/issues-pr-closed-raw/TommasU/scrivener)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/TommasU/scrivener/Developer/badges) 
+[![GitHub pull-requests-closed](https://img.shields.io/github/issues-pr-closed-raw/TommasU/scrivener)](https://github.com/TommasU/scrivener/pulls?q=is%3Apr+is%3Aclosed)
 [![language_count](https://img.shields.io/github/languages/count/TommasU/scrivener)](https://GitHub.com/TommasU/scrivener/) 
 [![Repo-size](https://img.shields.io/github/repo-size/TommasU/scrivener)](https://GitHub.com/TommasU/scrivener/)
 [![codecov](https://codecov.io/gh/TommasU/scrivener/branch/main/graph/badge.svg)](https://codecov.io/gh/TommasU/scrivener)
 ![Contributors](https://img.shields.io/badge/Contributors-5-yellowgreen)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/TommasU/scrivener)
-[![AutoPep8](https://img.shields.io/badge/AutoPep8-1.6.0-brightgreen)](https://pypi.org/project/autopep8/)
+[![AutoPep8](https://img.shields.io/badge/AutoPep8-1.6.0-brightgreen)](https://github.com/TommasU/scrivener/blob/main/.github/workflows/autopep8.yml)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=_pg9M32LiG8&ab_channel=AnshulPatel)
 
 ## Table of Contents
@@ -63,10 +63,11 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Contributions <a name="Contributions"></a>
 Please see our [CONTRIBUTING.md](https://github.com/TommasU/scrivener/blob/main/CONTRIBUTING.md) for instructions on how to contribute to the project by completing some of the issues.
 
-## Version 1.1 Contributions
+## Version 1.4 Contributions
 - Enhanced product quality by improving the summarization model.
 - Greatly improved summary formatting to improve readability
 - Provided Sentiment Analysis of the generated summary
+- Improved Heroku deployment
 
 ## Future Scope <a name="FutureScope"></a>
 For enhancement of this project following functionalities can be implemented
@@ -96,3 +97,4 @@ We would like to thank Professor Dr Timothy Menzies for helping us understand th
 - [https://shields.io/](https://shields.io/)
 - [https://www.powtoon.com/](https://www.powtoon.com/)
 - [https://www.heroku.com/](https://www.heroku.com/)
+
