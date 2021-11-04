@@ -13,16 +13,17 @@ video_one_url = "https://www.youtube.com/watch?v=JvBHwVpBCwM"
 video_two_url = "https://www.youtube.com/watch?v=qBTdukbzc78"
 
 test_sentence = """
-A computer is a machine that can be programmed to carry 
-out sequences of arithmetic or logical operations automatically. 
-Modern computers can perform generic sets of operations known 
-as programs. These programs enable computers to perform a wide 
-range of tasks. A computer system is a "complete" computer that 
-includes the hardware, operating system (main software), and 
-peripheral equipment needed and used for "full" operation. This 
-term may also refer to a group of computers that are linked and 
+A computer is a machine that can be programmed to carry
+out sequences of arithmetic or logical operations automatically.
+Modern computers can perform generic sets of operations known
+as programs. These programs enable computers to perform a wide
+range of tasks. A computer system is a "complete" computer that
+includes the hardware, operating system (main software), and
+peripheral equipment needed and used for "full" operation. This
+term may also refer to a group of computers that are linked and
 function together, such as a computer network or computer cluster.
 """
+
 
 @pytest.mark.parametrize('test_sentence', [
     (test_sentence),
@@ -34,4 +35,4 @@ def test_add_punctuation_transcript(test_sentence):
     sentence_no_punct = sentence_no_punct.lower().strip()
 
     punct_text = Punctuation.add_punctuation_transcript(sentence_no_punct)
-    assert len(re.findall("["+string.punctuation+"]", punct_text)) > 0
+    assert len(re.findall("[" + string.punctuation + "]", punct_text)) > 0
