@@ -48,7 +48,8 @@ The project is deployed on both Streamlit cloud and Heroku.
 - [Heroku](https://scrivener-heroku.herokuapp.com/)
 ## How to get MonkeyLearn API key
 1. Go to [https://monkeylearn.com/sentiment-analysis-online/](https://monkeylearn.com/sentiment-analysis-online/)
-2. Enter your requirements and sign up. You can use one of the pretrained model like we did or you can create your own model as well!
+2. Enter your requirements and sign up.
+The API key is associated with a limited number of queries per month (1000). You can use one of the pretrained model like we did or you can create your own model as well!
  
 ## Steps for Execution <a name="ExecutionSteps"></a>
 1. Clone the Git repository.
