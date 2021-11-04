@@ -12,12 +12,12 @@ setup(
 
     description='Video transcript summarizer',
     long_description="""\
-      Scrivener is a video transcript summarizer for Youtube videos.      
+      Scrivener is a video transcript summarizer for Youtube videos.
     """,
     keywords=['python', 'video summarizer', 'youtube', 'transcript'],
     classifiers=[
-          'License :: OSI Approved :: MIT License',
-          "Programming Language :: Python",
+        'License :: OSI Approved :: MIT License',
+        "Programming Language :: Python",
     ],
 
     packages=["source"],
