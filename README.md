@@ -69,17 +69,18 @@ Please see our [CONTRIBUTING.md](https://github.com/TommasU/scrivener/blob/main/
 - Provided Sentiment Analysis of the generated summary
 
 ## Future Scope <a name="FutureScope"></a>
-For enhancement of this project following functionalities can be implemented
-- Currently our application supports youtube videos and videos with .mp4 extension. Provide support for other video formats
-- Perform summarization for videos in languages other than English
-- Generate summary of Podcasts or other audiofiles
-- Provide summary in form of video
-- Generate summary of videos for specific time frames
-- UI Enhancement
-- Provide summary in form of audio
-- Generate summary of audio for specific time frames
-- Adding Chrome extension for SCRIVENER
-- Develop a Discord BOT for SCRIVENER
+This project as we believe contains an exciting stream of possibilities. You will be working into domains such as Natural Language Processing, Web Development, Digital Signal Processing, and Information Retrieval. Some of the possibilities you can explore are the following:
+* Is there any way in which a sentence in the summary can point back to the video where it was talked about?
+* Currently our application supports youtube videos and videos with .mp4 extension. Can you provide support for other video formats?
+* Can you perform summarization for videos in languages other than English
+* Can you generate summary of Podcasts or other audiofiles?
+* Is there a way to summarize videos for specific time frames?
+* How can we deliver summaries in the form of audio?
+* How do we diversify by expanding to a Chrome Extension and a Discord Bot?
+
+These are some of the fascinating topics we thought for you, but you should not limit yourself to these points! Play around with our repo! See what motivates you.
+
+As a bonus point, we have taken great care to adhere to the SE principles, so you have tools integrated for code coverage, style checking, code formatting, continuous testing and integration, and as a cherry on icing many meaningful testcases. So you can focus more on delivering state-of-the-art features!
 
 ## Team Members <a name="TeamMember"></a>
 
