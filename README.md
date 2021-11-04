@@ -61,8 +61,6 @@ The API key is associated with a limited number of queries per month (1000). You
 5. Next, open your browser and type in `localhost:8501` in the search bar to open the webUI of the application.
 6. The UI typically looks as shown below and here you have a choice between URL, file or normal text input.
 
-<img src="https://github.com/anshulp2912/scrivener/blob/main/media/demo.PNG" />
-
 ## License <a name="License"></a>
 This project is licensed under the terms of the MIT license. Please check [License](https://github.com/TommasU/scrivener/blob/main/LICENSE) for more details.
 
