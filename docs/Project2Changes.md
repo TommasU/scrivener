@@ -1,6 +1,6 @@
 # SCRIVENER Version 2.0 
 
-#### In the Version 2.0 of Scrivener the team has made significant changes to the code, documentation and have added more features that improves the overall funnctionality and usability of the original project.
+#### In the Version 2.0 of Scrivener the team has made significant changes to the code, documentation and have added more features that improves the overall functionality and usability of the original project.
 ****
 ### Improvements -
 
