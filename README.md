@@ -46,6 +46,8 @@ The complete development was achieved using the Python3 technology and it is rec
 The project is deployed on both Streamlit cloud and Heroku.
 - [Streamlit](https://share.streamlit.io/anshulp2912/scrivener/main/source/scrivener_user_interface.py)
 - [Heroku](https://scrivener-heroku.herokuapp.com/)
+
+
 ## How to get MonkeyLearn API key
 1. Go to [https://monkeylearn.com/sentiment-analysis-online/](https://monkeylearn.com/sentiment-analysis-online/)
 2. Enter your requirements and sign up.
@@ -72,6 +74,11 @@ Please see our [CONTRIBUTING.md](https://github.com/TommasU/scrivener/blob/main/
 - Greatly improved summary formatting to improve readability
 - Provided Sentiment Analysis of the generated summary
 - Improved Heroku deployment
+
+<h1 align="center">
+ <img src="https://github.com/TommasU/scrivener/blob/main/media/working_animation/improved_demo2.gif" />
+</h1>
+
 
 ## Future Scope <a name="FutureScope"></a>
 This project as we believe contains an exciting stream of possibilities. You will be working into domains such as Natural Language Processing, Web Development, Digital Signal Processing, and Information Retrieval. Some of the possibilities you can explore are the following:
