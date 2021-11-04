@@ -9,9 +9,10 @@ This code is licensed under MIT license (see LICENSE.MD for details)
 import os
 import shutil
 
+
 class Cleanup:
     """
-    A class used to clean temporary files generated 
+    A class used to clean temporary files generated
     ...
 
     Methods
@@ -20,10 +21,10 @@ class Cleanup:
         function to delete temporary files that were created while generating
         summary of youtube videos with closed captions.
     """
-    
+
     def __init__(self):
         pass
-            
+
     def delete_temp_files(self):
         """
         function to delete temporary files that were created while generating
