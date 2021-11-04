@@ -10,7 +10,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5601143.svg)](https://doi.org/10.5281/zenodo.5601143)
 [![GitHub license](https://img.shields.io/github/license/TommasU/scrivener)](https://github.com/TommasU/scrivener/blob/main/LICENSE)
 ![Lines of code](https://img.shields.io/tokei/lines/github/TommasU/scrivener)
-![Coverage](https://img.shields.io/badge/Coverage-97%25-red)
+[![codecov](https://codecov.io/gh/TommasU/scrivener/branch/main/graph/badge.svg)](https://codecov.io/gh/TommasU/scrivener)
 ![Contributors](https://img.shields.io/badge/Contributors-5-yellowgreen)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/TommasU/scrivener)
 [![AutoPep8](https://img.shields.io/badge/AutoPep8-1.6.0-brightgreen)](https://pypi.org/project/autopep8/)
