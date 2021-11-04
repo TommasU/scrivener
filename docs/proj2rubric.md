@@ -1,7 +1,7 @@
 
 |Score|Notes|Self Assessment| Evidence|
 |-|-----|----------|---------|
-|.5| short release cycles|3|[Code Frequency](https://github.com/TommasU/scrivener/graphs/code-frequency)|
+|.5| short release cycles|3|[Code Frequency](https://github.com/TommasU/scrivener/graphs/code-frequency), [Releases](https://github.com/TommasU/scrivener/releases)|
 |.5| workload is spread over the whole team (so one team member is often Xtimes more productive than the others...|3|[Completed Items](https://github.com/TommasU/scrivener/projects/1)|
 |.5|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing |3 |[Repo README](https://github.com/TommasU/scrivener)|
 |.5|the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up  |3 |[Contributing](https://github.com/TommasU/scrivener/blob/main/CONTRIBUTING.md)|
