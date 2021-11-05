@@ -90,6 +90,15 @@ Please follow these steps to have your contribution considered by the maintainer
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
+Implementational details:
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+2. Update the README.md with details of changes to the interface, this includes new environment 
+   variables, exposed ports, useful file locations and container parameters.
+3. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
+   do not have permission to do that, you may request the second reviewer to merge it for you.
+
+
 ## Styleguides
 
 #### Git Commit Messages
